@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:15.10
 MAINTAINER Ahmed Kamal <email.ahmedkamal@googlemail.com>
 
 RUN apt-get update && apt-get install nodejs npm git nodejs-legacy -qy
@@ -9,5 +9,6 @@ WORKDIR /yify-pop
 RUN npm install
 RUN npm install moment getport adm-zip opensrt_js child geddy
 RUN apt-get purge npm git -qy && apt-get autoremove -qy && apt-get clean all
+RUN geddy gen secret
 EXPOSE 4000 8889
 CMD node yifystart.js
