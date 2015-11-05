@@ -16,7 +16,7 @@ To build
 --------
 
 ```
-git clone https://github.com/kim0/docker-yify-pop.git
+git clone https://github.com/dadicool/docker-yify-pop.git
 docker build -t yify-pop-custom docker-yify-pop
 ```
 
