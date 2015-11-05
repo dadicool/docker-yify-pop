@@ -3,11 +3,13 @@ docker-yify-pop
 
 Docker build file for yify-pop (Popcorn-time style app with Web UI for YIFY content). You need to have https://www.docker.com/ installed and running to make this useful
 
+*UPDATE* : the YTS api doesn't work anymore (MPAA arggg) so the container works but it can't pull data about movies or shows from anywhere ...
+
 To Run
 ------
 
 ```
-docker run -d --name yify-pop -p 4000:4000 -p 8889:8889 kim0/yify-pop
+docker run -d --name yify-pop -p 4000:4000 -p 8889:8889 dadicool/yify-pop
 ```
 
 To build
